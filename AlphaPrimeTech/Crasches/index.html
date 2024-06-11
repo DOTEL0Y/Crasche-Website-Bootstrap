@@ -3,23 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crasche</title>
+    <title>Crasche New York</title>
+    <!-- Tab Icon-->
+     <link rel="shortcut icon" href="img/logo/tab_logo.png" type="image/x-icon">
+    <!--Bootstrap CSS-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- CSS Style\narbar.css-->
     <link rel="stylesheet" href="styles/navbar.css" />
+    <!-- CSS Style\Footer.css-->
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!--BootStrap Icon Font-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
   </head>
-  <body style="background-color: #005fad">
+  <body style="background-color: azure">
+    <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg" style="background-color: #002848">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
           ><img src="img/logo/crashe_rw.png" alt="Crashe Logo Link"
         /></a>
+        <!--Hamburger Menu Button-->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler text-light btn btn-outline-primary"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -27,7 +41,19 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+            />
+          </svg>
         </button>
         <div
           class="collapse navbar-collapse navbar-dark"
@@ -63,7 +89,7 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item nav-link dropdown-menu-dark" href="#"
+                  <a class="dropdown-item nav-link dropdown-menu-dark" href="Nodes\contact.html"
                     >Contact</a
                   >
                 </li>
@@ -76,9 +102,33 @@
             </li>
           </ul>
         </div>
+        
+
+        <!--Social Media -->
+        <div class="social-media m-2">
+          <!-- Twitter-->
+          <a
+            href="https://x.com/CrascheHat?prefetchTimestamp=1717941696613&mx=2"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="m-2"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            </svg></a>
+
+          <!-- Facebook-->
+          <a
+            href="https://www.facebook.com/CrascheNY/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="m-2"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg></a>
+        </div>
         <!--Button Shop-->
-        <button class="btn btn-outline-primary" style="color: white">
-          Shop
+        <button class="btn btn-outline-primary shop">
+          Cart
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -94,7 +144,11 @@
         </button>
       </div>
     </nav>
-    <section class="container-fluid" style="min-height: 50vh;">
+    <!--Navbar End-->
+
+    
+    <!--Carousel-->
+    <section class="container" style="min-height: 50vh">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -162,50 +216,280 @@
         </button>
       </div>
     </section>
+    <!--Carousel END-->
+    <!-- QUOTE -->
+    <!-- Quote - Designed as Hook Audience -->
+    <section
+      class="container justify-content-center my-2 text-center border border-primary bg-light"
+      style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+    >
+      <div class="grid">
+        <div class="h1 col-lg-12" style="letter-spacing: 0.4rem">
+          Welcome To
+          <span>
+            <img src="img/logo/crasche_logo.png " alt="" srcset="" />
+          </span>
+        </div>
+        <i class="quote h6"
+          >"Instead, I decided to create a hat that would offer a lot of impact
+          protection, but would have enough style that people like me would wear
+          it. That was the start of the Crasche hat..."</i
+        >
+        <em class="h5"><br />-Robert Emmet <br />Creator</em>
+      </div>
+    </section>
+    <!-- Quote END -->
+    <!--Newsletter-->
+    <section
+      class="pt-lg-5 pd-lg-5 text-light"
+      style="background-color: #002848"
+    >
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h2 class="mb-3 shadow">
+            Keep up with Crasche® latest news!
+            <p class="lead">Sign Up for our Newsletter.</p>
+          </h2>
+          <div class="input-group news-input">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="User@email.com"
+            />
+            <button class="btn btn-outline-primary" type="button">
+              Subscribe
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-newspaper"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"
+                />
+                <path
+                  d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Newsletter END-->
 
-    <footer class="footer container-fluid grid" >
-      <h5
-        class="user-select-none overflow-hidden g-col-1"
-        style="
-          width: 100%;
-          text-align: center;
-          background-color: #002848;
-          color: azure;
-        "
-      ><hr>
+    <!--Advertisment-->
+    <section class="container flex-lg-row g-2 d-flex justify-content-around">
+      <article class="card h-50 gx-5" style="max-width: 35%">
+        <img
+          src="img/logo/crasche_logo.png"
+          alt=""
+          class="d-none d-md-block img-fluid card-img-top h-25"
+        />
+        <div class="card-body">
+          <div class="h5 card-title">About Crasche®</div>
+          <div class="h6 text-muted card-subtitle mb-2">
+            Our Journey in the East Coast
+          </div>
+          <p class="card-textcol-lg-6">
+            Learn about our organization through our founder Robert Emmet.
+          </p>
+          <a href="#" class="btn btn-outline-primary">About Page</a>
+        </div>
+      </article>
+      <article class="card h-50 gx-5 rounded" style="max-width: 35%">
+        <img
+          src="img/card/bean_tech.png"
+          alt=""
+          class="d-none d-md-block img-fluid card-img-top"
+        />
+        <div class="card-body">
+          <div class="h5 card-title">Watch our Video!</div>
+          <div class="h6 text-muted card-subtitle mb-2">
+            Our Journey in the East Coast
+          </div>
+          <p class="card-textcol-lg-6">
+            Learn about our organization through our founder Robert Emmet.
+          </p>
+          <a href="#" class="btn btn-outline-primary">Video</a>
+        </div>
+      </article>
+    </section>
+    <!--Advertisement END-->
+
+    <!--Blue Bar -->
+    <div
+      class="user-select-none row shadow-lg text-center"
+      style="background-color: #002848"
+    >
+      <hr />
+      <h5 class="text-light col-lg-12 lead d-none d-sm-none d-md-block">
         | CRASCHE® NEW YORK LLC | IMPACT-RESISTANT PROTECTIVE HAT | MADE IN
-        AMERICA |<hr>
+        AMERICA |
       </h5>
+      <h5 class="text-light lead d-sm-block d-md-none">
+        | CRASCHE® NEW YORK LLC |
+      </h5>
+      <hr />
+    </div>
+    <!-- Blue Bar End-->
+
+     <!--Blue Bar -->
+     <div
+     class="user-select-none row shadow-lg text-center pt-2"
+   >
+     
+     <h5 class="col-lg-12 fw-bolder d-none d-sm-none d-md-block" style="color:#002848;">
+       <hr/>
+       | DESIGNED WITH STYLE | ENGINEERED FOR PROTECTION | CRASCHE® HATS ARE THE PERFECT FIT FOR EVERYONE |
+       <hr />
+     </h5>
+     <h5 class="text-light lead d-sm-block d-md-none">
+       | CRASCHE® NEW YORK LLC |
+     </h5>
+     
+   </div>
+   <!-- Blue Bar End-->
+
+    <!-- Footer-->
+    <footer class="footer" style="background-color:#002848;">
       <!--Button Go to Top of Page-->
       <!--Future change css, run function that animates scroll to top of page instead-->
-      <span class="position-absolute ">
-        <a href="index.html" target="_self" class="btn btn-outline-primary text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
+      <span class="position-absolute">
+        <a
+          href="index.html"
+          target="_self"
+          class="btn btn-outline-primary btn-lg"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-up-short btn-outline-primary"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"
+            />
           </svg>
         </a>
       </span>
-      <article class="grid row align-middle" style="background-color: #005fad">
-        
+      
+      <article class="grid row align-middle text-light">
         <img
           src="img/logo/crasche_logo.png"
           alt=""
           class="img-fluid col-2 mx-auto shadow-md"
         />
-        <hr>
-        <p class="text-center text-white">
-          Patented in the US and in China. Multiple patents pending in the USA,
-          internationally with the PCT (Patent Coopertion Treaty), in China and
-          in the European Union.
-          <br><strong style="text-align: center;color: white;">Copyright © 2024, CRASCHE® | All rights reserved | Impact-Resistant Protective Hat </strong>
-        </p>
-        
-      </article>
-    </footer>
-    <script
+        <div class="container row">
+          <hr/>
+          <div class="col-lg-4 p-5">
+            <ul class="list-unstyled mx-5 text-center shadow-sm copy gx-2" style="letter-spacing: .5rem;">
+              <p>Main</p>
+              <hr style="width: auto;">
+              <li class="p-2"><a href="">About</a></li>
+              <li class="p-2"><a href="">Shop</a></li>
+              <li class="p-2"><a href="">How It Work</a></li>
+              <li class="p-2"><a href="">Contact</a></li>
+              <li class="p-2"><a href="">News</a></li>
+              <li class="p-2"><a href="">Blog</a></li>
+            </ul>
+          </div>
+          <!-- Newsletter/Social Media/Address/Contact-->
+          <div class="col-lg-4">
+            <!--Newsletter-->
+            <div class=" p-5 justify-content-between align-items-center gx-1">
+              <h2 class="mb-3 ">
+                  Keep up with Crasche® 
+                  <p class="lead">Sign Up for our Newsletter.</p>
+                </h2>
+                <div class="input-group news-input">
+                  <input
+                  type="text"
+                  class="form-control"
+                  placeholder="User@email.com"
+                  />
+                  <button class="btn btn-outline-primary" type="button">
+                    Subscribe
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-newspaper"
+                      viewBox="0 0 16 16"
+                      >
+                      <path
+                        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"
+                      />
+                      <path
+                      d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"
+                      />
+                    </svg>
+                    </button>
+                    </div>
+                    </div>
+                    <!--Social Media -->
+                      <div class="social-media m-2 text-center">
+                        <!-- Twitter-->
+                        <a
+                          href="https://x.com/CrascheHat?prefetchTimestamp=1717941696613&mx=2"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="m-2"
+                          ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                          </svg></a>
+                  
+                        <!-- Facebook-->
+                        <a
+                          href="https://www.facebook.com/CrascheNY/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="m-2"
+                          ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg></a>
+                      </div>
+                     
+                    </div>
+                    <div class=" col-lg-4 p-5 text-center">
+                      <h3 class="lead " style="letter-spacing: .5rem;">Mailing Address&<br>Contact Information</h3>
+                      <p class="pt-2">
+                      <strong>Crasche New York</strong><br>
+                      2059 Merrick Road <br>#288<br>
+                      Merrick, NY 11566<br>
+                      (516) 364-0065<br>
+                      Bryan@crasche.com
+                    </p>
+                    </div>
+                     <!-- Newsletter/Social Media/Address/Contact END-->
+                      <div class="text-center lead">
+                        Powered with Bootstrap
+
+                        <i id="bootstrap" class="bi bi-bootstrap"></i>
+
+                      </div>
+                    <p class="text-center copy lead">
+                      
+                      <strong style="text-align: center"
+                      >|<a href="index.html" class="text-decoration-none">© 2024 CRASCHE </a>| All rights reserved | Impact-Resistant
+                      Protective Hat |
+                      </strong>
+                      </p>
+                      </article>
+                      </footer>
+                      <!--Personal javascript bootstrap icon-->
+                      <script src="scripts/footer.js"></script>
+                      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-  </body>
-</html>
+    </body>
+    </html>
+    

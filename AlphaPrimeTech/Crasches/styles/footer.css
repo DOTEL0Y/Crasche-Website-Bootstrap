@@ -1,0 +1,13 @@
+/* CSS FILE FOR FOOTER */
+
+
+/* Classes*/
+/* Copy Right Text Bottom*/
+.copy a{
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.copy a:hover{
+    color: #ffc107;
+}
