@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRASHE | SHOP</title>
+
+    <!-- Tab Icon-->
+    <link
+      rel="shortcut icon"
+      href="../img/logo/tab_logo.png"
+      type="image/x-icon"
+    />
+    <!--Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Style\narbar.css-->
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <!-- CSS Style\Footer.css-->
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <!-- CSS articles -->
+    <link rel="stylesheet" href="../styles/article.css" />
+
+    <!--BootStrap Icon Font-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #002848">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../img/logo/crashe_rw.png" alt="Crashe Logo Link"
+        /></a>
+        <!--Hamburger Menu Button-->
+        <button
+          class="navbar-toggler text-light btn btn-outline-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+            />
+          </svg>
+        </button>
+        <div
+          class="collapse navbar-collapse navbar-dark"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-link d-block d-lg-none">
+              <span class="btn btn-outline-primary shop"
+                >Cart <i class="bi bi-cart4"></i
+              ></span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="shop.html">Shop</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink "
+                style="background-color: #002848"
+              >
+                <li>
+                  <a class="dropdown-item nav-link dropdown-menu-dark" href="#"
+                    >News</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item nav-link dropdown-menu-dark" href="#"
+                    >How it Works</a
+                  >
+                </li>
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <form action="search.php" class="col-lg-4 p-4 d-lg-block d-md-none">
+          <button type="submit" class="rounded btn btn-outline-primary">
+            <i class="bi bi-search"></i>
+          </button>
+          <input
+            type="text"
+            class="rounded"
+            style="height: 100%"
+            placeholder="Search"
+          />
+        </form>
+
+        <!--Button Shop-->
+        <button class="btn d-none d-lg-block btn-outline-primary shop">
+          Cart
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-cart shadow-sm mx-auto"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!--Navbar End-->
+    <section>
+      <div class="row text-center">
+        <h1>-Shop-</h1>
+        <p class="lead bg-light">CRASCHE®</p>
+      </div>
+
+      <!--Blue Bar -->
+      <div
+        class="user-select-none row shadow-lg text-center"
+        style="background-color: #002848"
+      >
+        <hr />
+        <h5 class="text-light col-lg-12 lead d-none d-sm-none d-md-block">
+          | DESIGNED WITH STYLE | ENGINEERED FOR PROTECTION | CRASCHE® HATS ARE
+          THE PERFECT FIT FOR EVERYONE |
+        </h5>
+        <h5 class="text-light lead d-sm-block d-md-none">
+          | CRASCHE® NEW YORK LLC |
+        </h5>
+        <hr />
+      </div>
+      <!-- Blue Bar End-->
+
+
+      <!--Shop-->
+<section>
+
+
+  <!--Product Viewer-->
+  <div class="container ">
+   <article class="row p-3">
+   <!--Middie For Soccer -->
+    <div class="card col-lg-5 col-md-9 overflow-hidden align-items-center mx-5 pd-4 items" style="border-radius: 45px; height:45vh ;">
+      <div class="card-header user-select-none" style="position: absolute; background-color: red; color: white;">SOLD OUT</div>
+       <a href=""><img src="../img/Product/soccer-replacement.png" alt="" class="pt-5"></a>
+       <ul class="list-unstyled" >
+        <li>
+          <ul class="list-group list-group-horizontal-sm justify-content-between p-2">
+            <li class="list-group-item" >
+              <div class="form-check" >
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="navy-color" onchange="navyColor();">
+                <label class="form-check-label" for="flexRadioDefault1" >
+                  
+                </label>
+              </div>
+            </li>
+          <li class="list-group-item" style="background: transparent">
+            <div class="form-check" style="background: transparent">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="lilac-color">
+            <label class="form-check-label" for="flexRadioDefault1" >
+              
+            </label>
+          
+          </div>
+        </li>
+      <li class="list-group-item" >
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="black-color">
+        <label class="form-check-label" for="flexRadioDefault1">
+          
+        </label>
+      
+      </div>
+      </li>
+          </ul>
+        </li>
+        <li>
+          <select id="summer-hat-size" class="form-select form-select-sm " aria-label="Small select example" onchange="itemColor()">
+            <option selected>Size</option>
+            <option value="med/larg">MED/LARG</option>
+            <option value="xl">XL</option>
+          </select>
+        </li>
+      </ul> 
+      <div class="card-body">
+          <h1 class="lead card-title text-center pt-3" style="letter-spacing: .3rem;" id="middie-for-soccer">Middie For Soccer</h1>
+          <p class="card-text text-center "><strong>Price</strong> <span id="middie-for-soccer-price">$34.95</span></p>
+      </div>
+      
+    </div>
+   <!--Middie For Soccer END-->
+
+    <!-- Summer Knit Hat -->
+   <div class="card col-lg-5  align-items-center mx-5 pd-4 items" style="border-radius: 45px; height:45vh ;">
+      
+      <a href="">
+        <img src="../img/Product/spring-hats-6.png" alt="" class="pt-5">
+      </a>
+        
+      
+      <div class="card-body">
+        <a href="" class=""></a><a href="" class=""></a>
+        <ul class="list-unstyled" >
+          <li>
+            <ul class="list-group list-group-horizontal-sm justify-content-between p-2">
+              <li class="list-group-item" >
+                <div class="form-check" >
+                  <input class="form-check-input active" type="radio" name="flexRadioDefault" id="navy-color" onchange="navyColor();">
+                  <label class="form-check-label" for="flexRadioDefault1" >
+                    
+                  </label>
+                </div>
+              </li>
+            <li class="list-group-item" style="background: transparent">
+              <div class="form-check" style="background: transparent">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="lilac-color">
+                <label class="form-check-label" for="flexRadioDefault1">
+                </label>
+            
+            </div>
+          </li>
+        <li class="list-group-item" >
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="black-color">
+          <label class="form-check-label" for="flexRadioDefault1">
+            
+          </label>
+        
+        </div>
+        </li>
+            </ul>
+          </li>
+          <li>
+            <select id="summer-hat-size" class="form-select form-select-sm " aria-label="Small select example" onchange="getColor()">
+              <option selected>Size</option>
+              <option value="med/larg">MED/LARG</option>
+              <option value="xl">XL</option>
+            </select>
+          </li>
+        </ul>
+        
+          <h1 class="lead card-title text-center pt-3" style="letter-spacing: .3rem;" id="summer-hat">Summer Knit Hat</h1>
+          <p class="card-text text-center"><strong>Price</strong> <span id="summer-hat-price">$39.95</span></p>
+          
+      </div>
+      <button class=" addCart m-4" id="bag-btn" onclick="cart(this);">Add to Cart <i class="bi bi-bag-plus" id="bag" ></i></button>
+    </div>
+    <!-- Summer Knit Hat Ends-->
+   </article>
+   <!-- First Row of Product Item  End-->
+   <article class="row p-3">
+    <!--Bump Cap-->
+    <div class="card col-lg-5 col-md-9 overflow-hidden align-items-center mx-5 pd-4 items" style="border-radius: 45px; height:45vh ;">
+      
+       <a href=""><img src="../img/Product/Bump-cap.png" alt="" class="pt-5"></a> 
+       <ul class="list-unstyled" >
+        <li>
+          <ul class="list-group list-group-horizontal-sm justify-content-between p-2">
+            <li class="list-group-item" >
+              <div class="form-check" >
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="navy-color" onchange="navyColor();">
+                <label class="form-check-label" for="flexRadioDefault1" >
+                  
+                </label>
+              </div>
+            </li>
+          <li class="list-group-item" style="background: transparent">
+            <div class="form-check" style="background: transparent">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="lilac-color">
+            <label class="form-check-label" for="flexRadioDefault1" >
+              
+            </label>
+          
+          </div>
+        </li>
+      <li class="list-group-item" >
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="black-color">
+        <label class="form-check-label" for="flexRadioDefault1">
+          
+        </label>
+      
+      </div>
+      </li>
+          </ul>
+        </li>
+        <li>
+          <select id="summer-hat" class="form-select form-select-sm " aria-label="Small select example" onchange="itemColor()">
+            <option selected>Size</option>
+            <option value="med/larg">MED/LARG</option>
+            <option value="xl">XL</option>
+          </select>
+        </li>
+      </ul>
+      <div class="card-body">
+          <h1 class="lead card-title text-center pt-3" style="letter-spacing: .3rem;">Bump Cap</h1>
+          <p class="card-text text-center "><strong>Price</strong> $39.95</p>
+      </div>
+      <button class=" addCart m-4" id="bag-btn" onclick="cart(this);">Add to Cart <i class="bi bi-bag-plus" id="bag" ></i></button>
+    </div>
+   <!--Bump Cap END-->
+
+   <!--Summer Hat-->
+   <div class="card col-lg-5 col-md-9 overflow-hidden align-items-center mx-5 pd-4 items" style="border-radius: 45px; height:45vh ;">
+    
+     <a href=""><img src="../img/Product/thrash-hat-closer.png" alt="" class="pt-5"></a> 
+     <ul class="list-unstyled" >
+      <li>
+        <ul class="list-group list-group-horizontal-sm justify-content-between p-2">
+          <li class="list-group-item" >
+            <div class="form-check" >
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="navy-color" onchange="navyColor();">
+              <label class="form-check-label" for="flexRadioDefault1" >
+                
+              </label>
+            </div>
+          </li>
+        <li class="list-group-item" style="background: transparent">
+          <div class="form-check" style="background: transparent">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="lilac-color">
+          <label class="form-check-label" for="flexRadioDefault1" >
+            
+          </label>
+        
+        </div>
+      </li>
+    <li class="list-group-item" >
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="black-color">
+      <label class="form-check-label" for="flexRadioDefault1">
+        
+      </label>
+    
+    </div>
+    </li>
+        </ul>
+      </li>
+      <li>
+        <select id="summer-hat" class="form-select form-select-sm " aria-label="Small select example" onchange="itemColor()">
+          <option selected>Size</option>
+          <option value="med/larg">MED/LARG</option>
+          <option value="xl">XL</option>
+        </select>
+      </li>
+    </ul>
+    <div class="card-body">
+        <h1 class="lead card-title text-center pt-3" style="letter-spacing: .3rem;">Thrashe Hat</h1>
+        <p class="card-text text-center "><strong>Price</strong> $34.95</p>
+    </div>
+    <button class=" addCart m-4" id="bag-btn" onclick="cart(this);">Add to Cart <i class="bi bi-bag-plus" id="bag" ></i></button>
+  </div>
+ <!--Summer Hat END-->
+   </article>
+
+
+
+   <article class="row p-3">
+    <div class="card col-lg-5 col-md-9 overflow-hidden align-items-center mx-5 pd-4 items" style="border-radius: 45px; height:45vh ;">
+        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/Product/figure-skating.png" alt="" class="pt-5"></a>
+        <ul class="list-unstyled">
+            <li>
+                <ul class="list-group list-group-horizontal-sm justify-content-between p-2">
+                    <li class="list-group-item">
+                        <div class="form-check ">
+                            <input type="radio" class="form-check-input" id="black-color" name="color">
+                            <label class="form-check-label" for="flexRadioDefault1"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input type="radio" name="color" id="dark-purple" class="form-check-input">
+                            <label for="flexRadioDefault1"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input type="radio" name="color" id="neon-coral" class="form-check-input">
+                            <label for="flexRadioDefault1"></label>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <select class="form-select form-select-sm" name="size">
+                    <option selected>Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="l">Large</option>
+                    <option value="xl">XL</option>
+
+                  </select>
+            </li>
+        </ul>
+        <div class="card-body">
+            <div class="cart-text">
+                <h2 class="lead card-title text-center">Figure Skating</h3>
+                <p><strong>Price</strong>$48.95</p>
+            </div>
+        </div>
+        <button class=" addCart m-4" id="bag-btn" onclick="cart(this);">Add to Cart <i class="bi bi-bag-plus" id="bag" ></i></button>
+    </div>
+    <div class="card col-lg-5 col-md-9 overflow-hidden align-items-center mx-5 pd-4 items" style="border-radius: 45px; height:45vh ;">
+        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/Product/winter-knit-middie.png" alt="" class="pt-5"></a>
+        <ul class="list-unstyled">
+            <li>
+                <ul class="list-group list-group-horizontal-sm justify-content-between p-2">
+                    <li class="list-group-item">
+                        <div class="form-check ">
+                            <input type="radio" class="form-check-input" id="black-color" name="color">
+                            <label class="form-check-label" for="flexRadioDefault1"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input type="radio" name="color" id="dark-purple" class="form-check-input">
+                            <label for="flexRadioDefault1"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input type="radio" name="color" id="neon-coral" class="form-check-input">
+                            <label for="flexRadioDefault1"></label>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <select class="form-select form-select-sm" name="size">
+                    <option selected>Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="l">Large</option>
+                    <option value="xl">XL</option>
+
+                  </select>
+            </li>
+        </ul>
+        <div class="card-body">
+            <div class="cart-text">
+                <h2 class="lead card-title text-center">Winter Knit Middie</h3>
+                <p><strong>Price</strong>$38.95</p>
+            </div>
+        </div>
+        <button class=" addCart m-4" id="bag-btn" onclick="cart(this);">Add to Cart <i class="bi bi-bag-plus" id="bag" ></i></button>
+    </div>
+    </div>
+    </div>
+    
+   </article>
+  </div>
+</section>
+<!--Product Shop end-->
+
+<script src="../scripts/items.js"></script>
+<script src="../scripts/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.adds {
+    min-height: 40vh;
+}
+.addCart  {
+    background-color: #002848;
+    border: #002848 solid 1px;
+    border-radius: 10px;
+    letter-spacing: .1rem;
+    color: azure;
+    padding: 1rem;
+    font-family: Dancing Script;
+}
+.items {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .5s;
+    min-height: 70vh;
+}
+
+.items:hover {
+    color: red;
+    animation: item-card .5s ease-in 0s 1 forwards;
+    transition: .5s;
+}
+.items:hover::after {
+    transition: .5s;
+}
+
+/*Class Utilities*/
+
+.green-check {
+    color: limegreen;
+}
+
+/* ID Utilities */
+
+/* Color-items */
+#navy-color {
+    background-color: navy;
+}
+
+#lilac-color {
+    background-color: rgb(230,215,255);
+}
+
+#black-color {
+    background-color: rgb(43, 40, 40);
+}
+#dark-purple{
+    background-color: rgb(71, 0, 71);
+}
+#neon-coral{
+    background-color: rgb(77,77,255);
+}
+@keyframes item-card {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-1vh);
+    }
+}
